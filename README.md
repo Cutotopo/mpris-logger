@@ -8,7 +8,7 @@ Most players need to be not only running but also playing media for the applicat
 
 ## Requirements
  - A MPRIS-compatible music player
- - A Linux install
+ - A Linux installation which supports MPRIS
  - Python 3.8+
 
 ## To do
