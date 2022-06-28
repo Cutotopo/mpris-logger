@@ -1,5 +1,5 @@
 # mpris-logger
-Monitor MPRIS track changes for your player and save them to a json file to see which ones are the songs you listen to the most!
+Monitor MPRIS track changes from your player and save them to a json file to see which are songs you listen to the most!
 
 ## Configuration
 Type the name of your player as the value for the variable "playername" at the beginning of logger.py
