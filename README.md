@@ -10,3 +10,8 @@ Most players need to be not only running but also playing media for the applicat
  - A MPRIS-compatible music player
  - A Linux install
  - Python 3.8+
+
+## To do
+ - [ ] Count tracks played with "repeat one track" (monitor song progress)
+ - [ ] Log genres for music
+ - [ ] Create a way to select the current player at program startup from a list
