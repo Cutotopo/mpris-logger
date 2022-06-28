@@ -15,3 +15,4 @@ Most players need to be not only running but also playing media for the applicat
  - [ ] Count tracks played with "repeat one track" (monitor song progress)
  - [ ] Log genres for music
  - [ ] Create a way to select the current player at program startup from a list
+ - [ ] Improve "most played artists" section in viewer
