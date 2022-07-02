@@ -47,13 +47,7 @@ try:
                 file = open("history.json", "w")
                 file.write(json.dumps(data))
                 file.close()
-            except KeyError:
-                print(f"{trackname} It's the first time you play this!")
-                data[trackid] = 1
-                file = open("history.json", "w")
-                file.write(json.dumps(data))
-                file.close()
-            except TypeError:
+            except:
                 print(f"{trackname} It's the first time you play this!")
                 data[trackid] = 1
                 file = open("history.json", "w")
