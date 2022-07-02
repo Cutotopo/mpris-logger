@@ -3,10 +3,21 @@
 from time import sleep
 import dbus
 import json
+import subprocess
 
-# Type here the name of your player. To find it, run playertcl -l
-# Example: playername="Lollypop"
-playername = "<PLAYER NAME HERE>"
+try:
+    playerlist = str(subprocess.run(['playerctl', '-l'], stdout=subprocess.PIPE).stdout)
+except FileNotFoundError:
+    print("Please install playerctl. You can usually do so from your distribution's package manager.")
+    exit(2)
+playerlist = playerlist.replace("b'", "").replace("\\n'", "").replace("\\n", "!").split("!")
+print("\nAvailable players: ")
+for i, n in enumerate(playerlist):
+    print(f"{i}. {n}")
+playeridx = input("Type the number of the player you want to use: ")
+
+print(f"Selected player {playerlist[int(playeridx)]}")
+playername = playerlist[int(playeridx)]
 
 
 session_bus = dbus.SessionBus()
