@@ -1,5 +1,5 @@
 # mpris-logger
-Monitor MPRIS track changes from your player and save them to a json file to see which are songs you listen to the most!
+Monitor MPRIS track changes from your player and save them to a json file to see which ones are the songs you listen to the most!
 
 ## Warning
 Most players need to be not only running but also playing media for the application to work.
